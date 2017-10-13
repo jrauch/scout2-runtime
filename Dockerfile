@@ -9,6 +9,10 @@ WORKDIR /Scout2
 
 RUN python setup.py install
 
-WORKDIR /output
+RUN mkdir /runtime
+COPY rules /runtime/rules
+COPY runner.sh /runtime
 
-ENTRYPOINT ["Scout2","--no-browser"]
+WORKDIR /runtime
+
+ENTRYPOINT ["runner.sh"]
