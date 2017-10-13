@@ -15,4 +15,4 @@ COPY runner.sh /runtime
 
 WORKDIR /runtime
 
-ENTRYPOINT ["runner.sh"]
+ENTRYPOINT ["./runner.sh"]
