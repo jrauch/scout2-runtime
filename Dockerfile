@@ -1,6 +1,6 @@
 FROM python
 
-RUN apt-get update && apt-get upgrade 
+#RUN apt-get update && apt-get -y upgrade 
 
 RUN git clone https://github.com/nccgroup/Scout2 && \
 	pip install -r /Scout2/requirements.txt

@@ -583,7 +583,7 @@
         "cloudtrail-not-configured.json": [
             {
                 "enabled": true,
-                "level": "danger"
+                "level": "warning"
             }
         ],
         "iam-user-no-key-rotation.json": [
